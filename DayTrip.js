@@ -9,35 +9,6 @@
 // let userEntertainment = prompt("Enter 3 forms of entertainment");
 
 
-// function destination (userDestination) {
-//     let destArr = [];
-//     for (let i = 0; i < destArr; i++) {
-//         destArr += userDestination[i];
-//     }
-// }
-
-// userChoices = [];
-
-
-// destList = ['Brazil', 'Thailand', 'Spain', 'Morocco'];
-
-// function randDest (destList) {
-//     return destList[Math.floor(Math.random()*destList.length)];
-// }
-
-// let autoDest = randDest(destList);
-
-// alert(autoDest);
-
-// confirmDest = prompt("do you like your destination? Type Yes/No");
-//     if (confirmDest == "yes") {
-//         autoDest += userChoices;
-//         console.log(userChoices);
-//     }
-//     else if (confirmDest == "no") {
-//         randDest ++;
-//     }
-
 ///////////////////////////////////////////////////////
 
 let destList = ['Brazil', 'Thailand', 'Spain', 'Turkey'];
@@ -129,28 +100,9 @@ if (likeEnt === "yes") {
     }
 
 
-
-    // else if (confirmDest == "no") {
-    //     randDest++;
-    //     confirmDest;
-    // }
-        // confirmDest;
-
-    // while (confirmDest != "yes") {
-    //     confirmDest = randDest;
-    // }    
-
-    // if (confirm == "yes") {
-    //     console.log(autoDest)
-    // }
-    
-
-    // while(confirmDest != "yes") {
-    //     randDest ++;
-    //         if(confirmDest == "yes") {
-    //             console.log(autoDest);
-    //         }
-
-    // }
+let finalSelection = prompt("Do you like all of the choices listed?  Type yes/no.");
+    if (finalSelection = "yes") {
+        
+    }
 
 /////////////////////////////////////////////////////////////////
