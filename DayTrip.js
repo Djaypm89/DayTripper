@@ -51,11 +51,13 @@ let autoDest = randDest(destList);
 alert(autoDest);
 
 let likeDest = prompt("do you like your destination? Type Yes/No");
-        if (likeDest == "yes") {
+        if (likeDest === "yes") {
             console.log(autoDest);
+            randRest;
         }           
             else {
                 confirmDest;
+                // randDest;
             }
 
     let secondAutoDest = randDest(destList);
