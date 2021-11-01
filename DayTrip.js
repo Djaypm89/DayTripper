@@ -19,8 +19,6 @@ function randDest (destList) {
 
 let autoDest = randDest(destList);
 
-
-
 let likeDest = prompt("The system choose you " + autoDest + "!! Do you like your destination? Type yes/no");
         if (likeDest === "yes") {
             console.log("Pack your bags, you're headed to " + autoDest);
@@ -101,8 +99,16 @@ if (likeEnt === "yes") {
 
 
 let finalSelection = prompt("Do you like all of the choices listed?  Type yes/no.");
-    if (finalSelection = "yes") {
-        
+    if (finalSelection === "yes") {
+        alert("Bon Voyage Brobewon! " 
+        + '\n' + autoDest + '\n' + autoRest + '\n' + autoTrans + '\n' + autoEnt);
     }
+        else {
+            autoDest = randDest(destList);
+        }
+
+    
+
+    
 
 /////////////////////////////////////////////////////////////////
