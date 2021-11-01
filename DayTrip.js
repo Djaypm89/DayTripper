@@ -42,6 +42,8 @@
 
 destList = ['Brazil', 'Thailand', 'Spain', 'Turkey'];
 
+// let secondAutoDest = randDest(destList);
+
 function randDest (destList) {
     return destList[Math.floor(Math.random()*destList.length)];
 }
@@ -52,36 +54,40 @@ alert(autoDest);
 
 let likeDest = prompt("do you like your destination? Type Yes/No");
         if (likeDest === "yes") {
-            console.log(autoDest);
-            randRest;
+            console.log("Pack your bags, you're headed to " + autoDest);
+
         }           
             else {
-                confirmDest;
-                // randDest;
-            }
-
-    let secondAutoDest = randDest(destList);
-
-function confirmDest (destList) { 
-    // let likeDest = prompt("do you like your destination? Type Yes/No");
-    // let secondAutoDest = randDest(destList);
-    // let secondAutoDest = [];
-    // secondAutoDest = randDest(destList);
-        // if (likeDest == "yes") {
-        //         console.log(autoDest);
-        //     }
-        //     else {
-        //         let secondAutoDest = randDest(destList);
-        //         secondAutoDest = randDest(destList);
-        //         return secondAutoDest;
-            
-        //     }
-        // }
-        return destList[Math.floor(Math.random()*destList.length)];
+            //    destList i--; 
+               autoDest = randDest(destList);
+               console.log("Pack your bags, you're headed to " + autoDest);
         
-    }
-        alert("bring a backpack and a gun, you're going to " + secondAutoDest);   
-        console.log(secondAutoDest);
+            }
+        
+
+
+    // let secondAutoDest = randDest(destList);
+
+// function confirmDest (destList) { 
+//     // let likeDest = prompt("do you like your destination? Type Yes/No");
+//     // let secondAutoDest = randDest(destList);
+//     // let secondAutoDest = [];
+//     // secondAutoDest = randDest(destList);
+//         // if (likeDest == "yes") {
+//         //         console.log(autoDest);
+//         //     }
+//         //     else {
+//         //         let secondAutoDest = randDest(destList);
+//         //         secondAutoDest = randDest(destList);
+//         //         return secondAutoDest;
+            
+//         //     }
+//         // }
+//         return destList[Math.floor(Math.random()*destList.length)];
+        
+//     }
+//         alert("bring a backpack and a gun, you're going to " + secondAutoDest);   
+//         console.log(secondAutoDest);
 
     
 
