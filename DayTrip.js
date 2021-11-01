@@ -40,9 +40,7 @@
 
 ///////////////////////////////////////////////////////
 
-destList = ['Brazil', 'Thailand', 'Spain', 'Turkey'];
-
-// let secondAutoDest = randDest(destList);
+let destList = ['Brazil', 'Thailand', 'Spain', 'Turkey'];
 
 function randDest (destList) {
     return destList[Math.floor(Math.random()*destList.length)];
@@ -50,51 +48,28 @@ function randDest (destList) {
 
 let autoDest = randDest(destList);
 
-alert(autoDest);
 
-let likeDest = prompt("do you like your destination? Type Yes/No");
+
+let likeDest = prompt("The system choose you " + autoDest + "!! Do you like your destination? Type yes/no");
         if (likeDest === "yes") {
             console.log("Pack your bags, you're headed to " + autoDest);
 
         }           
             else {
-            //    destList i--; 
                autoDest = randDest(destList);
                console.log("Pack your bags, you're headed to " + autoDest);
         
             }
-        
 
-
-    // let secondAutoDest = randDest(destList);
-
-// function confirmDest (destList) { 
-//     // let likeDest = prompt("do you like your destination? Type Yes/No");
-//     // let secondAutoDest = randDest(destList);
-//     // let secondAutoDest = [];
-//     // secondAutoDest = randDest(destList);
-//         // if (likeDest == "yes") {
-//         //         console.log(autoDest);
-//         //     }
-//         //     else {
-//         //         let secondAutoDest = randDest(destList);
-//         //         secondAutoDest = randDest(destList);
-//         //         return secondAutoDest;
-            
-//         //     }
-//         // }
-//         return destList[Math.floor(Math.random()*destList.length)];
-        
-//     }
-//         alert("bring a backpack and a gun, you're going to " + secondAutoDest);   
-//         console.log(secondAutoDest);
-
-    
+            // let removedDest = destList.splice();
+            // removedDest = randDest(removedDest);
+            // console.log("Pack your bags, you're headed to " + removedDest);
 
 
 
 
-restList = ['tacos','pizza', 'ramen', 'burgers'];
+
+let restList = ['tacos','pizza', 'ramen', 'burgers'];
 
 function randRest (restList) {
     return restList[Math.floor(Math.random()*restList.length)];
@@ -102,17 +77,36 @@ function randRest (restList) {
 
 let autoRest = randRest(restList);
 
-console.log(autoRest);
+let likeRest = prompt("The system choose you " + autoRest + "!! Do you like your food? Type yes/no");
+        if (likeRest === "yes") {
+            console.log("Hope you're hungry, you'll be eating " + autoRest);
+
+        }           
+            else {
+               autoRest = randRest(restList);
+               console.log("Hope you're hungry, you'll be eating " + autoRest);
+        
+            }
 
 
-transList = ['fly', 'drive', 'train', 'hoof it'];
+transList = ['airplane', 'auto', 'train', 'hoofin it'];
 
 function randTrans (transList) {
     return transList[Math.floor(Math.random()*transList.length)];
 }
 
  let autoTrans = randTrans(transList);
- console.log(autoTrans);
+
+ let likeTrans = prompt("The system choose you " + autoTrans + "!! Do you like your transportation? Type yes/no");
+        if (likeTrans === "yes") {
+            console.log("buckle up, you'll be travelling by " + autoTrans);
+
+        }           
+            else {
+               autoTrans = randTrans(transList);
+               console.log("buckle up, you'll be travelling by " + autoTrans);
+        
+            }
 
 
  entList = ['movies', 'music', 'books', 'daydream'];
@@ -122,7 +116,17 @@ function randTrans (transList) {
  }
 
 let autoEnt = randEnt(entList);
-console.log(autoEnt);
+
+let likeEnt = prompt("The system choose you " + autoEnt + "!! Do you like your entertainent? Type yes/no");
+if (likeEnt === "yes") {
+    console.log("Hope you enjoy your " + autoEnt);
+
+}           
+    else {
+       autoEnt = randEnt(entList);
+       console.log("Hope you enjoy your " + autoEnt);
+
+    }
 
 
 
