@@ -50,24 +50,36 @@ let autoDest = randDest(destList);
 
 alert(autoDest);
 
-let secondAutoDest = randDest(destList);
+let likeDest = prompt("do you like your destination? Type Yes/No");
+        if (likeDest == "yes") {
+            console.log(autoDest);
+        }           
+            else {
+                confirmDest;
+            }
+
+    let secondAutoDest = randDest(destList);
 
 function confirmDest (destList) { 
-    let likeDest = prompt("do you like your destination? Type Yes/No");
+    // let likeDest = prompt("do you like your destination? Type Yes/No");
     // let secondAutoDest = randDest(destList);
     // let secondAutoDest = [];
     // secondAutoDest = randDest(destList);
-        if (likeDest == "yes") {
-                console.log(autoDest);
-            }
-            else {
-                let secondAutoDest = randDest(destList);
-                secondAutoDest = randDest(destList);
-                return secondAutoDest;
+        // if (likeDest == "yes") {
+        //         console.log(autoDest);
+        //     }
+        //     else {
+        //         let secondAutoDest = randDest(destList);
+        //         secondAutoDest = randDest(destList);
+        //         return secondAutoDest;
             
-            }
-        }
-            console.log(secondAutoDest);
+        //     }
+        // }
+        return destList[Math.floor(Math.random()*destList.length)];
+        
+    }
+        alert("bring a backpack and a gun, you're going to " + secondAutoDest);   
+        console.log(secondAutoDest);
 
     
 
