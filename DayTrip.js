@@ -104,9 +104,14 @@ let finalSelection = prompt("Do you like all of the choices listed?  Type yes/no
         + '\n' + autoDest + '\n' + autoRest + '\n' + autoTrans + '\n' + autoEnt);
     }
         else {
-            autoDest = randDest(destList);
+            alert("We're sorry, no changes allowed at this time! \nVisit our online help section to add further frustration to your experience. \nThanks for choosing Covid Business Solutions.  Goodbye.")
+            // finalSelection = randDest(destList);
+            // tried tp return user to start selections over,
+            // but it takes them to randDest then returns back to 
+            // the bottom of the code after. 
         }
 
+// randDest;
     
 
     
