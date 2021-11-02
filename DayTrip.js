@@ -27,6 +27,7 @@ let likeDest = prompt("The system choose you " + autoDest + "!! Do you like your
             else {
                autoDest = randDest(destList);
                console.log("Pack your bags, you're headed to " + autoDest);
+               alert("Pack your bags, you're headed to " + autoDest);
         
             }
 
@@ -54,6 +55,7 @@ let likeRest = prompt("The system choose you " + autoRest + "!! Do you like your
             else {
                autoRest = randRest(restList);
                console.log("Hope you're hungry, you'll be eating " + autoRest);
+               alert("Hope you're hungry, you'll be eating " + autoRest);
         
             }
 
@@ -74,6 +76,7 @@ function randTrans (transList) {
             else {
                autoTrans = randTrans(transList);
                console.log("buckle up, you'll be travelling by " + autoTrans);
+               alert("buckle up, you'll be travelling by " + autoTrans);
         
             }
 
@@ -94,6 +97,7 @@ if (likeEnt === "yes") {
     else {
        autoEnt = randEnt(entList);
        console.log("Hope you enjoy your " + autoEnt);
+       alert("Hope you enjoy your " + autoEnt);
 
     }
 
@@ -104,7 +108,7 @@ let finalSelection = prompt("Do you like all of the choices listed?  Type yes/no
         + '\n' + autoDest + '\n' + autoRest + '\n' + autoTrans + '\n' + autoEnt);
     }
         else {
-            alert("We're sorry, no changes allowed at this time! \nVisit our online help section to add further frustration to your experience. \nThanks for choosing Covid Business Solutions.  Goodbye.")
+            alert("We're sorry, no further changes allowed at this time! \nYour trip is displayed in the console. \nVisit our online help section to add further frustration to your experience. \nThanks for choosing Covid Travel Solutions.  Goodbye.");
             // finalSelection = randDest(destList);
             // tried tp return user to start selections over,
             // but it takes them to randDest then returns back to 
